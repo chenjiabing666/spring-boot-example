@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zengqingfa.springboot.state.demo.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zengqingfa.springboot.state.demo.entity.Order">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="order_code" property="orderCode" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="SMALLINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="price" property="price" jdbcType="DECIMAL" />
+        <result column="delete_flag" property="deleteFlag" jdbcType="TINYINT" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="create_user_code" property="createUserCode" jdbcType="VARCHAR" />
+        <result column="update_user_code" property="updateUserCode" jdbcType="VARCHAR" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="remark" property="remark" jdbcType="VARCHAR" />
+    </resultMap>
+
+</mapper>
